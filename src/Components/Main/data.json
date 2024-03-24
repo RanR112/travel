@@ -2,7 +2,7 @@
 
     {
         "id":1,
-        "imgSrc":"../../Assets/KawahPutihBandung2.jpg",
+        "imgSrc":"https://raw.githubusercontent.com/RanR112/travel/master/src/Assets/KawahPutihBandung2.jpg?token=GHSAT0AAAAAACPTGQJVUARF2B2J5K6HIETEZP7XY3A",
         "destTitle":"Kawah Putih",
         "location":"Bandung",
         "grade":"Cultural Relax",
