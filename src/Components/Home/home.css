@@ -18,6 +18,7 @@
   display: flex;
   justify-content: center;
   margin: auto;
+  min-height: 100vh;
 }
 .home .overlay {
   position: absolute;
@@ -36,7 +37,7 @@
   top: 0;
   bottom: 0;
   -o-object-fit: cover;
-      object-fit: cover;
+     object-fit: cover;
 }
 .home .homeContent {
   width: 100%;
@@ -65,13 +66,13 @@
 .home .homeContent .cardDiv {
   position: relative;
   padding: 2rem 1rem;
-  background: var(--whiteColor);
+  background: rgba(255, 255, 255, 0.75);
   border-radius: 10px;
   gap: 1rem;
 }
 .home .homeContent .cardDiv label {
   display: block;
-  color: var(--textColor);
+  color: var(--blackColor);
   padding-bottom: 10px;
   font-size: 13px;
   font-weight: 500;
@@ -120,7 +121,7 @@
   width: max-content;
   bottom: -0.7rem;
   -moz-column-gap: 0.8rem;
-        column-gap: 0.8rem;
+       column-gap: 0.8rem;
   padding: 5px 1rem;
   border-radius: 3rem;
   left: 50%;
@@ -140,6 +141,7 @@
 .home .homeContent .homeFooterIcons {
   width: 100%;
   justify-content: space-between;
+  margin-top: 5rem;
 }
 .home .homeContent .homeFooterIcons .icon {
   font-size: 20px;

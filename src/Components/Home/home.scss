@@ -18,6 +18,7 @@
     display: flex;
     justify-content: center;
     margin: auto;
+    min-height: 100vh;
 
     .overlay {
         position: absolute;
@@ -69,13 +70,13 @@
         .cardDiv {
             position: relative;
             padding: 2rem 1rem;
-            background: var(--whiteColor);
+            background: rgba(255, 255, 255, 0.75);
             border-radius: 10px;
             gap: 1rem;
 
             label {
                 display: block;
-                color: var(--textColor);
+                color: var(--blackColor);
                 padding-bottom: 10px;
                 font-size: 13px;
                 font-weight: 500;
@@ -152,6 +153,7 @@
         .homeFooterIcons {
             width: 100%;
             justify-content: space-between;
+            margin-top: 5rem;
 
             .icon {
                 font-size: 20px;

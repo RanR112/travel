@@ -10,7 +10,7 @@
   --inputColor: rgb(239, 239, 239);
   --bodyColor: rgb(240, 240, 246);
   --cradBG: rgb(225, 225, 235);
-  --cradHover: rgb(225, 225, 255);
+  --cradHover: rgb(208, 230, 255);
 }
 
 .main {
@@ -50,7 +50,7 @@
 }
 .main .secContent .singleDestination:hover {
   background: var(--cradHover);
-  box-shadow: 1 4px 4px rgba(46, 42, 42, 0.549);
+  box-shadow: 1 4px 4px rgba(85, 85, 114, 0.549);
   transition: 0.3s ease;
 }
 .main .secContent .singleDestination .imageDiv {

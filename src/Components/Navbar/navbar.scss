@@ -63,11 +63,11 @@
                     padding-left: .5rem 0;
                     
                     .navLink {
-                        color: var(--textColor);
+                        color: var(--textColor) !important;
                         font-size: .9rem;
                         font-weight: 600;
                         &:hover {
-                            color: var(--PrimaryColor);
+                            color: var(--PrimaryColor)!important;
                         }
                     }
                 }
@@ -98,7 +98,7 @@
         }
     }
 
-    .toogleNavbar {
+    .toggleNavbar {
         .icon {
             font-size: 25px;
             color: var(--PrimaryColor);
@@ -109,4 +109,45 @@
     }
 
 
+}
+
+@media screen and (min-width: 769px) {
+    .toggleNavbar, .closeNavbar {
+        display: none;
+    }
+
+    .header {
+        padding: 1.5rem 2rem;
+
+        .navBar {
+            .navLists {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: row;
+
+                .navItem {
+                    .navLink {
+                        color: var(--textColor);
+                        padding: 0 0.45rem;
+                        font-size: 1rem;
+                        font-weight: 500;
+
+                        &:hover {
+                            color: var(--PrimaryColor);
+                        }
+                    }
+                }
+
+                .btn {
+                    margin-left: 1rem;
+
+                    a {
+                        color: var(--whiteColor);
+                        font-weight: 500;
+                    }
+                }
+            }
+        }
+    }
 }
