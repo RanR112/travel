@@ -1,14 +1,23 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import './main.css'
 import Data from './data.json'
 import { HiOutlineLocationMarker } from "react-icons/hi";
 import { LuClipboardCheck } from "react-icons/lu";
 
+import Aos from 'aos';
+import 'aos/dist/aos.css'
+
 const Main = () => {
+     // Hook scroll animation
+    useEffect(() => {
+        Aos.init({duration: 2000})
+    }, [])
+
+
     return (
     <section className="main container section">
         <div className="secTitle">
-            <h3 className="title">
+            <h3 data-aos="fade-right" className="title">
                 Most visited destinations
             </h3>
         </div>
@@ -16,9 +25,9 @@ const Main = () => {
         <div className="secContent grid">
 
             {
-                Data.map(({id, imgSrc, destTitle, location, grade, fees, description}) => {
+                Data.map(({id, imgSrc, destTitle, location, tag, fees, description}) => {
                     return(
-                        <div key={id} className="singleDestination">
+                        <div key={id} data-aos="fade-up" className="singleDestination">
                             <div className="imageDiv">
                                 <img src={imgSrc} alt={destTitle} />
                             </div>
@@ -31,8 +40,8 @@ const Main = () => {
                                 </span>
 
                                 <div className="fees flex">
-                                    <div className="grade">
-                                        <span>{grade}<small>+1</small></span>
+                                    <div className="tag">
+                                        <span>{tag}</span>
                                     </div>
                                     <div className="price">
                                         <h5>{fees}</h5>

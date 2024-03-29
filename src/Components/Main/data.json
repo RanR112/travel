@@ -2,12 +2,57 @@
 
     {
         "id":1,
-        "imgSrc":"https://raw.githubusercontent.com/RanR112/travel/master/src/Assets/KawahPutihBandung2.jpg?token=GHSAT0AAAAAACPTGQJV5SNTNJITDWJHTZKAZQBCVHQ",
+        "imgSrc":"../../Assets/KawahPutihBandung2.jpg",
         "destTitle":"Kawah Putih",
         "location":"Bandung",
-        "grade":"Cultural Relax",
-        "fees":"Rp 500.000",
-        "description":"Kawah Putih terletak di dekat kota pasar kecil Ciwidey yang menawan, sekitar 50 Kilometer selatan Bandung . Danau Kawah merupakan salah satu dari dua kawah Gunung Patuha, dengan Kawah Patuha yang kering atau Kawah Patuha yang terletak 600 meter ke arah barat laut, menjadi kawah lainnya. Melangkah ke Kawah Putih seperti memasuki dunia berbeda. Sesuai dengan namanya, Danau Kawah dan sekitarnya didominasi warna putih pucat sehingga memancarkan suasana yang cukup menghipnotis. Kawah gunung berapi yang luas dan tidak aktif dipenuhi dengan air berwarna biru kehijauan yang nyata. Tebing yang ditumbuhi pepohonan yang mengelilingi kawah mencapai ketinggian sekitar 2.500 meter di atas permukaan laut dan menjadi latar belakang yang menakjubkan, terutama saat awan mulai bergulung. Ketinggian di sini membawa serta suhu yang dingin, yang dalam beberapa hal, akan menambah kesan magis. kemegahan Kawah Putih."
+        "tag":"Wisata Alam",
+        "fees":"Rp 80.000",
+        "description":"Kawah Putih adalah sebuah tempat wisata di Jawa Barat yang terletak di Desa Alam Endah, Kecamatan Rancabali, Kabupaten Bandung Jawa Barat yang terletak di kaki Gunung Patuha. Kawah putih merupakan sebuah danau yang terbentuk dari letusan Gunung Patuha"
+    },
+    {
+        "id":2,
+        "imgSrc":"https://raw.githubusercontent.com/RanR112/travel/master/src/Assets/Ciherang%20Sumedang%201.jpg?token=GHSAT0AAAAAACPTGQJUA5C6EAJFOQSSWGP2ZQFRNQA",
+        "destTitle":"Ciherang",
+        "location":"Sumedang",
+        "tag":"Wisata Alam",
+        "fees":"Rp 25.000",
+        "description":"Wisata Kampung Ciherang, merupakan area kawasan wisata yang memanfaatkan lahan perhutani. Kawasan lebih dari 3 hektar ini dipenuhi pohon-pohon cemara dan pinus yang membuat areanya sangat sejuk meski saat siang hari."
+    },
+    {
+        "id":3,
+        "imgSrc":"https://raw.githubusercontent.com/RanR112/travel/master/src/Assets/Curug%20Cikondang%20%20Cianjur%201.jpg?token=GHSAT0AAAAAACPTGQJVKF2XGQSP3JPVVM52ZQFRKZQ",
+        "destTitle":"Curug Cikondang",
+        "location":"Cianjur",
+        "tag":"Wisata Alam",
+        "fees":"Rp 5.000",
+        "description":"Curug Cikondang adalah sebuah air terjun cantik yang memiliki bentuk yang tinggi dan lebar, curug ini terletak di Kabupaten Cianjur, Desa Sukadana. Bentuk dari air terjun ini mengingatkan pada air terjun Niagara yang berada di negara Amerika. Curug ini sering disebut sebagai Niagara Mininya Cianjur."
+    },
+    {
+        "id":4,
+        "imgSrc":"../../Assets/TamanSafariBogor.jpg",
+        "destTitle":"Taman Safari Indonesia Bogor",
+        "location":"Bogor",
+        "tag":"Kebun Binatang",
+        "fees":"Rp 450.000",
+        "description":"Taman Safari Indonesia adalah tempat wisata keluarga berwawasan lingkungan yang berorientasi pada habitat satwa di alam bebas. Taman Safari Indonesia terletak di Desa Cibeureum Kecamatan Cisarua, Kabupaten Bogor, Jawa Barat atau yang lebih dikenal dengan kawasan Puncak"
+    },
+    {
+        "id":5,
+        "imgSrc":"../../Assets/GreenCanyon.jpg",
+        "destTitle":"Green Canyon",
+        "location":"Pangandaran",
+        "tag":"Wisata Alam",
+        "fees":"Rp 45.000",
+        "description":"Cukang Taneuh atau Green Canyon adalah salah satu objek wisata di Jawa Barat yang terletak di Desa Kertayasa Kecamatan Cijulang, Kabupaten Pangandaran. Objek wisata ini berjarak ± 31 km dari Pangandaran."
+    },
+    {
+        "id":6,
+        "imgSrc":"../../Assets/KebunRaya.jpg",
+        "destTitle":"Kebun Raya",
+        "location":"Bogor",
+        "tag":"Kebun Botani",
+        "fees":"Rp 25.000",
+        "description":"Kebun Raya Bogor atau Kebun Botani Bogor adalah sebuah kebun botani besar yang terletak di Kota Bogor, Indonesia. Kebun ini dioperasikan oleh Badan Riset dan Inovasi Nasional. Kebun ini terletak di pusat kota Bogor dan bersebelahan dengan kompleks istana kepresidenan Istana Bogor"
     }
 
 ]

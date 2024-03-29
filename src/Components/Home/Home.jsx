@@ -35,7 +35,7 @@ const Home = () => {
                     </h1>
                 </div>
 
-                <div className="cardDiv grid">
+                <div data-aos="fade-up" className="cardDiv grid">
                     <div className="destinationInput">
                         <label htmlFor="city">Search your destination:</label>
                         <div className="input flex">
@@ -67,7 +67,7 @@ const Home = () => {
                     </div>
                 </div>
 
-                <div className="homeFooterIcons flex">
+                <div data-aos="fade-up" className="homeFooterIcons flex">
                     <div className="rightIcons">
                         <FiFacebook className='icon'/>
                         <FiInstagram className='icon'/>

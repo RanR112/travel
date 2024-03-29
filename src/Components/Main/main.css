@@ -31,7 +31,7 @@
   height: 5px;
   width: 120px;
   right: 0;
-  bottom: 5px;
+  bottom: 0;
   z-index: -1;
 }
 .main .secContent {
@@ -95,21 +95,13 @@
   border-top: 1.5px solid var(--grayText);
   border-bottom: 1.5px solid var(--grayText);
 }
-.main .secContent .singleDestination .cardInfo .fees .grade {
+.main .secContent .singleDestination .cardInfo .fees .tag {
   color: var(--textColor);
   max-width: 100px;
   line-height: 20px;
   display: flex;
   align-items: center;
   justify-content: center;
-}
-.main .secContent .singleDestination .cardInfo .fees .grade small {
-  text-align: center;
-  background: var(--gradientColor);
-  border-radius: 1rem;
-  color: var(--whiteColor);
-  padding: 1px 10px;
-  font-size: 10px;
 }
 .main .secContent .singleDestination .cardInfo .fees .price {
   font-size: 2rem;
@@ -130,4 +122,30 @@
 .main .secContent .singleDestination .cardInfo .btn .icon {
   align-self: center;
   font-size: 18px;
+}
+
+@media screen and (min-width: 600px) and (max-width: 1280px) {
+  .title {
+    font-size: 1.5rem;
+  }
+  .title::after {
+    width: 155px !important;
+  }
+  .secContent {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .secContent .singleDestination {
+    height: auto;
+  }
+  .secContent .singleDestination .cardInfo .fees .price {
+    font-size: 1.4rem !important;
+  }
+}
+@media screen and (min-width: 840px) {
+  .secContent {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .secContent .singleDestination {
+    height: auto;
+  }
 }/*# sourceMappingURL=main.css.map */
