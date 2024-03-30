@@ -1,6 +1,6 @@
 import React, {useEffect} from 'react'
 import './home.css'
-import video from '../../Assets/Video3.mp4'
+import video from '../../Assets/video3.mp4'
 import { GrLocation } from "react-icons/gr"
 import { FaSearch } from "react-icons/fa";
 
