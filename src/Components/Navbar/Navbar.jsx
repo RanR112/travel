@@ -2,7 +2,7 @@ import React, {useState} from 'react'
 import './navbar.css'
 import { AiFillCloseCircle } from "react-icons/ai"
 import { TbGridDots } from "react-icons/tb"
-import logo from "../../Assets/logoo.png"
+import logo from "../../Assets/Logo.png"
 
 const Navbar = () => {
     const [active, setActive] = useState('navBar')

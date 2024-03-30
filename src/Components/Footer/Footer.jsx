@@ -1,13 +1,13 @@
 import React, {useEffect} from 'react'
 import './footer.css'
-import video2 from '../../Assets/video.mp4'
+import video2 from '../../Assets/Video.mp4'
 import { FiSend } from "react-icons/fi";
 import { FaXTwitter } from "react-icons/fa6";
 import { FaInstagram } from "react-icons/fa";
 import { FaFacebookSquare } from "react-icons/fa";
 import { AiOutlineYoutube } from "react-icons/ai";
 import { FaChevronRight } from "react-icons/fa";
-import logo from "../../Assets/logoo.png"
+import logo from "../../Assets/Logo.png"
 
 import Aos from 'aos';
 import 'aos/dist/aos.css'
