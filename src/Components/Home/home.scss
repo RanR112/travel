@@ -20,7 +20,7 @@
     margin: auto;
     min-height: 100vh;
 
-    .overlay {
+    .layer {
         position: absolute;
         height: 100%;
         width: 100%;
@@ -43,7 +43,7 @@
     .homeContent {
         width: 100%;
         height: max-content;
-        padding: 8rem 1.5rem 3rem;
+        padding: 6rem 1.5rem;
         display: flex;
         row-gap: 3rem;
         flex-direction: column;
@@ -82,34 +82,28 @@
                 font-weight: 500;
             }
 
-            .label_total {
-                justify-content: space-between;
-                align-items: center;
-
-                .total {
-                    color: var(--textColor);
-                    font-size: 18px;
-                    padding-bottom: 10px;
-                }
-            }
-
             .input {
                 height: 40px;
                 padding: 0 1rem;
                 background: var(--inputColor);
                 border-radius: 3rem;
 
-                input {
+                input, select {
                     background: none;
                     border: none;
                     outline: none;
                     width: 100%;
                     font-size: 13px;
                     font-weight: 500;
+                    
 
                     &::placeholder {
                         font-size: 13px;
                     }
+                }
+
+                select {
+                    cursor: pointer;
                 }
 
                 .icon {
@@ -117,16 +111,12 @@
                     color: var(--PrimaryColor) !important;
                     margin-left: 10px;
                 }
-
-                .input[type=range] {
-                    background: blue;
-                }
             }
 
             .searchOptions {
                 position: absolute;
                 background: var(--gradientColor);
-                width: max-content;
+                width: 200px;
                 bottom: -0.7rem;
                 column-gap: .8rem;
                 padding: 5px 1rem;
@@ -135,6 +125,7 @@
                 transform: translate(-50%);
                 justify-content: center;
                 cursor: pointer;
+                color: var(--whiteColor);
 
                 &:hover {
                     background: var(--SecondaryColor);
@@ -146,22 +137,6 @@
 
                 span {
                     font-size: 13px;
-                }
-            }
-        }
-
-        .homeFooterIcons {
-            width: 100%;
-            justify-content: space-between;
-            margin-top: 5rem;
-
-            .icon {
-                font-size: 20px;
-                margin: 0 5px;
-                color: var(--whiteColor);
-                font-weight: 600;
-                &:hover {
-                    color: var(--PrimaryColor);
                 }
             }
         }
@@ -182,17 +157,6 @@
                     position: relative;
                     font-size: 2.3rem;
                     width: max-content;
-
-                    &::after {
-                        position: absolute;
-                        content: '';
-                        background: var(--SecondaryColor);
-                        height: 5px;
-                        width: 145px;
-                        right: 0px;
-                        bottom: 5px;
-                        z-index: -1;
-                    }
                 }
             }
 

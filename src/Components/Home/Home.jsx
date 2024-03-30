@@ -2,10 +2,7 @@ import React, {useEffect} from 'react'
 import './home.css'
 import video from '../../Assets/video3.mp4'
 import { GrLocation } from "react-icons/gr"
-import { HiFilter } from "react-icons/hi";
-import { FiFacebook, FiInstagram } from "react-icons/fi";
-import { FaListUl } from "react-icons/fa";
-import { TbApps } from "react-icons/tb";
+import { FaSearch } from "react-icons/fa";
 
 import Aos from 'aos';
 import 'aos/dist/aos.css'
@@ -20,14 +17,14 @@ const Home = () => {
 
 
     return (
-        <section className="home">
-            <div className="overlay"></div>
+        <section className="home" id='Home'>
+            <div className="layer"></div>
             <video src={video} muted autoPlay loop type="video/mp4"></video>
 
             <div className="homeContent container">
                 <div className="textDiv">
                     <span data-aos="fade-up" className="smallText">
-                        Our Packages
+                        Our Services
                     </span>
                     
                     <h1 data-aos="fade-up" className="homeTitle">
@@ -37,45 +34,46 @@ const Home = () => {
 
                 <div data-aos="fade-up" className="cardDiv grid">
                     <div className="destinationInput">
-                        <label htmlFor="city">Search your destination:</label>
+                        <label htmlFor="city">Search by destination:</label>
                         <div className="input flex">
                             <input type="text" placeholder='Enter name here...'/>
                             <GrLocation className='icon'/>
                         </div>
                     </div>
                     <div className="dateInput">
-                        <label htmlFor="date">Select your date:</label>
+                        <label htmlFor="date">Search by tag:</label>
                         <div className="input flex">
-                            <input type="date"/>
+                            <select className="tagForm">
+                                <option selected>All Tags</option>
+                                <option value="Wisata Alam">Wisata Alam</option>
+                                <option value="Kebun Binatang">Kebun Binatang</option>
+                                <option value="Kebun Botani">Kebun Botani</option>
+                            </select>
                         </div>
                     </div>
                     <div className="priceInput">
-                        <div className="label_total flex">
-                            <label htmlFor="price">Max price:</label>
-                            <h3 className="total">Rp 5.000.000</h3>
+                        <div className="label_total">
+                            <label htmlFor="price">Search by price:</label>
                             <div className="input flex">
-                                <input type="range" max="5000" min="1000"/>
+                                <select className="tagForm">
+                                    <option selected>All Prices</option>
+                                    <option value="Rp 0 - Rp 50.000">Rp 0 - Rp 50.000</option>
+                                    <option value="Rp 50.000 - Rp 100.000">Rp 50.000 - Rp 100.000</option>
+                                    <option value="Rp 100.000 - Rp 200.000">Rp 100.000 - Rp 200.000</option>
+                                    <option value="Rp 200.000 - Rp 500.000">Rp 200.000 - Rp 500.000</option>
+                                </select>
                             </div>
 
                         </div>
                         
                     </div>
 
-                    <div className="searchOptions flex">
-                    <HiFilter className='icon'/>
-                    <span>MORE FILTERS</span>
-                    </div>
-                </div>
-
-                <div data-aos="fade-up" className="homeFooterIcons flex">
-                    <div className="rightIcons">
-                        <FiFacebook className='icon'/>
-                        <FiInstagram className='icon'/>
-                    </div>
-                    <div className="leftIcons">
-                        <FaListUl className='icon'/>
-                        <TbApps className='icon'/>
-                    </div>
+                    <a href="#Main">
+                        <div className="searchOptions flex">
+                                <FaSearch className='icon'/>
+                                <span>SEARCH</span>
+                        </div>
+                    </a>
                 </div>
             </div>
 

@@ -54,7 +54,7 @@
   transition: 0.3s ease;
 }
 .main .secContent .singleDestination .imageDiv {
-  height: 180px;
+  height: 100%;
   width: 100%;
   overflow: hidden;
 }

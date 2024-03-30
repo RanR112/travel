@@ -15,17 +15,17 @@ const Main = () => {
 
 
     return (
-    <section className="main container section">
+    <section className="main container section" id='Main'>
         <div className="secTitle">
             <h3 data-aos="fade-right" className="title">
-                Most visited destinations
+                West Java destinations
             </h3>
         </div>
 
         <div className="secContent grid">
 
             {
-                Data.map(({id, imgSrc, destTitle, location, tag, fees, description}) => {
+                Data.map(({id, imgSrc, destTitle, location, tag, fees, loc, description}) => {
                     return(
                         <div key={id} data-aos="fade-up" className="singleDestination">
                             <div className="imageDiv">
@@ -52,9 +52,11 @@ const Main = () => {
                                     <p>{description}</p>
                                 </div>
 
-                                <button className="btn flex">
-                                    DETAILS <LuClipboardCheck className='icon'/>
-                                </button>
+                                <a href={loc}>
+                                    <button className="btn flex">
+                                        DETAILS <LuClipboardCheck className='icon'/>
+                                    </button>
+                                </a>
                             </div>
                         </div>
                         )

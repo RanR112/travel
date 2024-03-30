@@ -7,6 +7,7 @@ import { FaInstagram } from "react-icons/fa";
 import { FaFacebookSquare } from "react-icons/fa";
 import { AiOutlineYoutube } from "react-icons/ai";
 import { FaChevronRight } from "react-icons/fa";
+import logo from "../../Assets/logoo.png"
 
 import Aos from 'aos';
 import 'aos/dist/aos.css'
@@ -21,19 +22,18 @@ const Footer = () => {
 
     return (
     <section className="footer">
-        <div className="videoDiv">
-            <video src={video2} loop autoPlay muted type='video/mp4'></video>
-        </div>
+        <div className="layer"></div>
+        <video src={video2} loop autoPlay muted type='video/mp4'></video>
 
         <div className="secContent container">
-            <div className="contactDiv flex">
+            <div className="contactDiv flex" id='Contact'>
                 <div data-aos="fade-up" className="text">
                     <small>KEEP IN TOUCH</small>
-                    <h2>Travel with us</h2>
+                    <h2>Send us a feedback</h2>
                 </div>
 
                 <div className="inputDiv flex">
-                    <input data-aos="fade-up" type="email" placeholder='Enter Email Address' />
+                    <input data-aos="fade-up" type="text" placeholder='Enter feedback here...' />
                     <button data-aos="fade-up" className="btn flex" type='submit'>
                         SEND <FiSend className='icon'/>
                     </button>
@@ -41,11 +41,10 @@ const Footer = () => {
             </div>
 
             <div className="footerCard flex">
-                <div className="footerIntro flex">
+                <div className="footerIntro flex" id='About'>
                     <div className="logoDiv">
-                        <a data-aos="fade-up" href="#" className='logo flex'>
-                            West Java Tour
-                        </a>
+                        <img data-aos="fade-up" src={logo} alt="logo" className='icon'/>
+                        <h4 data-aos="fade-up" className='logo flex'>West Java Tour</h4>
                     </div>
 
                     <div data-aos="fade-up" className="footerParagraph">
@@ -53,9 +52,9 @@ const Footer = () => {
                     </div>
 
                     <div data-aos="fade-up" className="footerSocials">
-                        <FaXTwitter className='icon'/>
                         <FaInstagram className='icon'/>
                         <FaFacebookSquare className='icon'/>
+                        <FaXTwitter className='icon'/>
                         <AiOutlineYoutube className='icon'/>
                     </div>
                 </div>

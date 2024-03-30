@@ -1,8 +1,8 @@
 import React, {useState} from 'react'
 import './navbar.css'
-import {MdOutlineTravelExplore} from 'react-icons/md'
 import { AiFillCloseCircle } from "react-icons/ai"
 import { TbGridDots } from "react-icons/tb"
+import logo from "../../Assets/logoo.png"
 
 const Navbar = () => {
     const [active, setActive] = useState('navBar')
@@ -21,45 +21,37 @@ const Navbar = () => {
         <header className="header flex">
 
             <div className="logoDiv">
-                <a href="#" className="logo flex">
-                    <h1><MdOutlineTravelExplore className="icon"/> WJ Tour</h1>
-                </a>
+                <span className="logo flex">
+                    <img src={logo} alt="logo" className='icon'/><h1> WJ Tour</h1>
+                </span>
             </div>
 
             <div className={active}>
                 <ul className="navLists flex">
 
                     <li className="navItem">
-                        <a href="#" className="navLink">Home</a>
+                        <a href="#Home" className="navLink">Home</a>
                     </li>
 
                     <li className="navItem">
-                        <a href="#" className="navLink">Packages</a>
+                        <a href="#Main" className="navLink">Tour</a>
                     </li>
 
                     <li className="navItem">
-                        <a href="#" className="navLink">Shop</a>
+                        <a href="#Contact" className="navLink">About</a>
                     </li>
 
                     <li className="navItem">
-                        <a href="#" className="navLink">About</a>
+                        <a href="#About" className="navLink">Contact</a>
                     </li>
 
-                    <li className="navItem">
-                        <a href="#" className="navLink">Pages</a>
-                    </li>
-
-                    <li className="navItem">
-                        <a href="#" className="navLink">News</a>
-                    </li>
-
-                    <li className="navItem">
-                        <a href="#" className="navLink">Contact</a>
-                    </li>
-
-                    <button className="btn">
-                        <a href="#">BOOK NOW</a>
-                    </button>
+                    <div className="mode">
+                        <label htmlFor="mode">Dark 
+                            <input type="checkbox" />
+                            <span className="slider"></span>
+                        </label>
+                        
+                    </div>
                 </ul>
 
                 <div onClick={removeNavbar} className="closeNavbar">

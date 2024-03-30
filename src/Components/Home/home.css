@@ -20,7 +20,7 @@
   margin: auto;
   min-height: 100vh;
 }
-.home .overlay {
+.home .layer {
   position: absolute;
   height: 100%;
   width: 100%;
@@ -43,7 +43,7 @@
   width: 100%;
   height: -moz-max-content;
   height: max-content;
-  padding: 8rem 1.5rem 3rem;
+  padding: 6rem 1.5rem;
   display: flex;
   row-gap: 3rem;
   flex-direction: column;
@@ -78,22 +78,13 @@
   font-size: 13px;
   font-weight: 500;
 }
-.home .homeContent .cardDiv .label_total {
-  justify-content: space-between;
-  align-items: center;
-}
-.home .homeContent .cardDiv .label_total .total {
-  color: var(--textColor);
-  font-size: 18px;
-  padding-bottom: 10px;
-}
 .home .homeContent .cardDiv .input {
   height: 40px;
   padding: 0 1rem;
   background: var(--inputColor);
   border-radius: 3rem;
 }
-.home .homeContent .cardDiv .input input {
+.home .homeContent .cardDiv .input input, .home .homeContent .cardDiv .input select {
   background: none;
   border: none;
   outline: none;
@@ -101,25 +92,24 @@
   font-size: 13px;
   font-weight: 500;
 }
-.home .homeContent .cardDiv .input input::-moz-placeholder {
+.home .homeContent .cardDiv .input input::-moz-placeholder, .home .homeContent .cardDiv .input select::-moz-placeholder {
   font-size: 13px;
 }
-.home .homeContent .cardDiv .input input::placeholder {
+.home .homeContent .cardDiv .input input::placeholder, .home .homeContent .cardDiv .input select::placeholder {
   font-size: 13px;
+}
+.home .homeContent .cardDiv .input select {
+  cursor: pointer;
 }
 .home .homeContent .cardDiv .input .icon {
   font-size: 18px;
   color: var(--PrimaryColor) !important;
   margin-left: 10px;
 }
-.home .homeContent .cardDiv .input .input[type=range] {
-  background: blue;
-}
 .home .homeContent .cardDiv .searchOptions {
   position: absolute;
   background: var(--gradientColor);
-  width: -moz-max-content;
-  width: max-content;
+  width: 200px;
   bottom: -0.7rem;
   -moz-column-gap: 0.8rem;
        column-gap: 0.8rem;
@@ -129,6 +119,7 @@
   transform: translate(-50%);
   justify-content: center;
   cursor: pointer;
+  color: var(--whiteColor);
 }
 .home .homeContent .cardDiv .searchOptions:hover {
   background: var(--SecondaryColor);
@@ -138,20 +129,6 @@
 }
 .home .homeContent .cardDiv .searchOptions span {
   font-size: 13px;
-}
-.home .homeContent .homeFooterIcons {
-  width: 100%;
-  justify-content: space-between;
-  margin-top: 5rem;
-}
-.home .homeContent .homeFooterIcons .icon {
-  font-size: 20px;
-  margin: 0 5px;
-  color: var(--whiteColor);
-  font-weight: 600;
-}
-.home .homeContent .homeFooterIcons .icon:hover {
-  color: var(--PrimaryColor);
 }
 
 @media screen and (min-width: 500px) {
@@ -163,16 +140,6 @@
     font-size: 2.3rem;
     width: -moz-max-content;
     width: max-content;
-  }
-  .home .homeContent .textDiv .homeTitle::after {
-    position: absolute;
-    content: "";
-    background: var(--SecondaryColor);
-    height: 5px;
-    width: 145px;
-    right: 0px;
-    bottom: 5px;
-    z-index: -1;
   }
   .home .homeContent .cardDiv {
     grid-template-columns: repeat(2, 1fr);
