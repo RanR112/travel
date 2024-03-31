@@ -45,8 +45,12 @@ const Navbar = () => {
                         <a href="#About" className="navLink">Contact</a>
                     </li>
 
+                    <li className="navItem">
+                        <span className="dark">Dark</span>
+                    </li>
+
                     <div className="mode">
-                        <label htmlFor="mode">Dark 
+                        <label className="switch">-
                             <input type="checkbox" />
                             <span className="slider"></span>
                         </label>
