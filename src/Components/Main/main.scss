@@ -150,13 +150,13 @@
         
             img {
                 margin-top: 2rem;
-                width: 15rem;
+                width: 10rem;
                 height: auto;
             }
         
             h3 {
                 color: var(--blackColor);
-                font-size: 18px;
+                font-size: 13px;
                 margin-bottom: 3rem;
             }
         }
@@ -187,6 +187,16 @@
                 }
             }
         }
+
+        .noData{
+            img {
+                width: 12rem !important;
+            }
+
+            h3 {
+                font-size: 14px !important;
+            }
+        }
     }
 }
 
@@ -196,6 +206,16 @@
 
         .singleDestination {
             height: auto;
+        }
+
+        .noData{
+            img {
+                width: 15rem !important;
+            }
+
+            h3 {
+                font-size: 18px !important;
+            }
         }
     }
 }

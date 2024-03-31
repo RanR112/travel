@@ -18,6 +18,7 @@
 }
 .main .secTitle .title {
   position: relative;
+  width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
   color: var(--textColor);
@@ -132,12 +133,12 @@
 }
 .main .secContent .noData img {
   margin-top: 2rem;
-  width: 15rem;
+  width: 10rem;
   height: auto;
 }
 .main .secContent .noData h3 {
   color: var(--blackColor);
-  font-size: 18px;
+  font-size: 13px;
   margin-bottom: 3rem;
 }
 
@@ -157,6 +158,12 @@
   .secContent .singleDestination .cardInfo .fees .price {
     font-size: 1.4rem !important;
   }
+  .secContent .noData img {
+    width: 12rem !important;
+  }
+  .secContent .noData h3 {
+    font-size: 14px !important;
+  }
 }
 @media screen and (min-width: 840px) {
   .secContent {
@@ -165,4 +172,11 @@
   .secContent .singleDestination {
     height: auto;
   }
-}/*# sourceMappingURL=main.css.map */
+  .secContent .noData img {
+    width: 15rem !important;
+  }
+  .secContent .noData h3 {
+    font-size: 18px !important;
+  }
+}
+/*# sourceMappingURL=main.css.map */
