@@ -53,7 +53,6 @@ const Main = ({ filter }) => {
         applyFilter();
     });
 
-
     return (
     <section className="main container section" id='Main'>
         <div className="secTitle">
