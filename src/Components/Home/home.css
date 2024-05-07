@@ -90,6 +90,10 @@
 .home .homeContent .cardDiv .input select {
   cursor: pointer;
 }
+.home .homeContent .cardDiv .input option {
+  background-color: var(--whiteColor);
+  color: var(--blackColor);
+}
 .home .homeContent .cardDiv .input .icon {
   font-size: 18px;
   color: var(--SecondaryColor) !important;

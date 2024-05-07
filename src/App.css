@@ -17,7 +17,7 @@
     --whiteColor: rgb(255, 255, 255);
     --blackColor: rgb(27, 45, 54);
     --textColor: rgb(88, 88, 95);
-    --whiteColorDeam: rgb(255, 255, 245);
+    --whiteColor2: rgb(255, 255, 245);
     --greyText: rgb(190, 190, 190);
     --inputColor: rgb(239, 239, 239);
     --bodyColor: rgb(240, 240, 246);
@@ -35,7 +35,7 @@
     --whiteColor: rgb(0, 0, 0);
     --blackColor: rgb(255, 255, 255);
     --textColor: rgb(228, 228, 238);
-    --whiteColorDeam: rgb(26, 26, 26);
+    --whiteColor2: rgb(26, 26, 26);
     --greyText: rgb(223, 223, 223);
     --inputColor: rgb(56, 56, 56);
     --bodyColor: rgb(87, 87, 87);
@@ -47,14 +47,14 @@
 
 .App {
     color: var(--greyText);
-    background-color: var(--whiteColorDeam);
+    background-color: var(--whiteColor2);
     font-size: large;
     font-weight: bold;
 }
 
 html {
     scroll-behavior: smooth;
-    background-color: var(--whiteColorDeam);
+    background-color: var(--whiteColor2);
 }
 
 a {

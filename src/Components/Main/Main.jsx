@@ -89,7 +89,7 @@ const Main = ({ filter, theme }) => {
 
                                 <a href={loc}>
                                     <button className="btn flex">
-                                        DETAILS <LuClipboardCheck className='icon'/>
+                                        DETAIL <LuClipboardCheck className='icon'/>
                                     </button>
                                 </a>
                             </div>

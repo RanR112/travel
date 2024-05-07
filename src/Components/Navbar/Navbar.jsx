@@ -2,7 +2,8 @@ import React, {useState} from 'react'
 import './navbar.css'
 import { AiFillCloseCircle } from "react-icons/ai"
 import { TbGridDots } from "react-icons/tb"
-import logo from "../../Assets/Logo.png"
+import logob from "../../Assets/logoblacktext.png"
+import logow from "../../Assets/logowhitetext.png"
 
 const Navbar = ({ toggleTheme, theme }) => {
     const [active, setActive] = useState('navBar')
@@ -26,7 +27,7 @@ const Navbar = ({ toggleTheme, theme }) => {
 
             <div className="logoDiv">
                 <span className="logo flex">
-                    <img src={logo} alt="logo" className='icon'/><h1> WJ Tour</h1>
+                    <img src={theme !== 'light' ? logow : logob} alt="logo" className='icon'/>
                 </span>
             </div>
 

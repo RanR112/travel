@@ -6,7 +6,8 @@ import { FaInstagram } from "react-icons/fa";
 import { FaFacebookSquare } from "react-icons/fa";
 import { AiOutlineYoutube } from "react-icons/ai";
 import { FaChevronRight } from "react-icons/fa";
-import logo from "../../Assets/Logo.png"
+import logob from "../../Assets/logoblack.png"
+import logow from "../../Assets/logowhite.png"
 
 
 
@@ -20,14 +21,14 @@ const Footer = ({theme}) => {
         <div className="secContent container">
             <div className="contactDiv flex" id='Contact'>
                 <div data-aos="fade-up" className="text">
-                    <small>KEEP IN TOUCH</small>
-                    <h2>Send us a feedback</h2>
+                    <small>SEMOGA LIBURAN ANDA MENYENANGKAN</small>
+                    <h2>Berikan Masukkan Anda</h2>
                 </div>
 
                 <div className="inputDiv flex">
-                    <input data-aos="fade-up" type="text" placeholder='Enter feedback here...' />
+                    <input data-aos="fade-up" type="text" placeholder='Ketik masukkan Anda...' />
                     <button data-aos="fade-up" className="btn flex" type='submit'>
-                        SEND <FiSend className='icon'/>
+                        KIRIM <FiSend className='icon'/>
                     </button>
                 </div>
             </div>
@@ -35,12 +36,12 @@ const Footer = ({theme}) => {
             <div className="footerCard flex">
                 <div className="footerIntro flex" id='About'>
                     <div className="logoDiv">
-                        <img data-aos="fade-up" src={logo} alt="logo" className='icon'/>
+                        <img data-aos="fade-up" src={theme !== 'light' ? logow : logob} alt="logo" className='icon'/>
                         <h4 data-aos="fade-up" className='logo flex'>West Java Tour</h4>
                     </div>
 
                     <div data-aos="fade-up" className="footerParagraph">
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti minus illo at atque accusantium similique, eaque deserunt. Alias eum voluptate maiores necessitatibus minus pariatur dignissimos assumenda ut odit, molestiae blanditiis.
+                    West Java Tour adalah sebuah platform daring yang didedikasikan untuk menyediakan informasi lengkap tentang destinasi wisata di provinsi Jawa Barat, Indonesia. Didirikan dengan tujuan untuk membantu wisatawan lokal dan internasional dalam menemukan keindahan dan kekayaan budaya yang ada di Jawa Barat. West Java Tour telah menjadi salah satu sumber terpercaya untuk perencanaan perjalanan dan rekomendasi tempat wisata.
                     </div>
 
                     <div data-aos="fade-up" className="footerSocials">
@@ -55,49 +56,59 @@ const Footer = ({theme}) => {
                     {/* Group 1 */}
                     <div data-aos="fade-up" className="linkGroup">
                         <span className="groupTitle">
-                            OUR AGENCY
+                            JASA KAMI
                         </span>
 
                         <li className="footerList flex">
                             <FaChevronRight className='icon'/>
-                            Services
+                            Hotel
                         </li>
                         
                         <li className="footerList flex">
                             <FaChevronRight className='icon'/>
-                            Insurance
+                            Tiket Pesawat
                         </li>
 
                         <li className="footerList flex">
                             <FaChevronRight className='icon'/>
-                            Agency
+                            Tiket Kereta Api
                         </li>
 
                         <li className="footerList flex">
                             <FaChevronRight className='icon'/>
-                            Tourism
+                            Tiket Bus & Travel
                         </li>
 
                         <li className="footerList flex">
                             <FaChevronRight className='icon'/>
-                            Payment
+                            Antar Jemput
+                        </li>
+
+                        <li className="footerList flex">
+                            <FaChevronRight className='icon'/>
+                            Rental Mobil
                         </li>
 
                     </div>
                     {/* Group 2 */}
                     <div data-aos="fade-up" className="linkGroup">
                         <span className="groupTitle">
-                            PARTNERS
+                            PARTNER
                         </span>
 
                         <li className="footerList flex">
                             <FaChevronRight className='icon'/>
-                            Bookings
+                            Pesona Indonesia
                         </li>
                         
                         <li className="footerList flex">
                             <FaChevronRight className='icon'/>
-                            Rentcars
+                            KAI Access
+                        </li>
+
+                        <li className="footerList flex">
+                            <FaChevronRight className='icon'/>
+                            Sinar Jaya
                         </li>
 
                         <li className="footerList flex">
@@ -113,6 +124,43 @@ const Footer = ({theme}) => {
                         <li className="footerList flex">
                             <FaChevronRight className='icon'/>
                             Agoda
+                        </li>
+
+                    </div>
+                    {/* Group 3 */}
+                    <div data-aos="fade-up" className="linkGroup">
+                        <span className="groupTitle">
+                            FAVORIT
+                        </span>
+
+                        <li className="footerList flex">
+                            <FaChevronRight className='icon'/>
+                            Bandung
+                        </li>
+                        
+                        <li className="footerList flex">
+                            <FaChevronRight className='icon'/>
+                            Bogor
+                        </li>
+
+                        <li className="footerList flex">
+                            <FaChevronRight className='icon'/>
+                            Cianjur
+                        </li>
+
+                        <li className="footerList flex">
+                            <FaChevronRight className='icon'/>
+                            Cirebon
+                        </li>
+
+                        <li className="footerList flex">
+                            <FaChevronRight className='icon'/>
+                            Tasikmalaya
+                        </li>
+
+                        <li className="footerList flex">
+                            <FaChevronRight className='icon'/>
+                            Sukabumi
                         </li>
 
                     </div>

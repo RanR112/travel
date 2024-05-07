@@ -70,7 +70,7 @@
                     border: 1px solid white;
                     outline: none;
                     background: transparent;
-                    color: var(--whiteColor);
+                    color: white;
 
                     &::placeholder {
                         color: white;
@@ -216,7 +216,6 @@
         .secContent {
             .footerCard {
                 .footerLinks {
-                    grid-template-columns: repeat(3,1fr);
                     padding-bottom: 1rem;
                 }
 
@@ -245,7 +244,7 @@
                     justify-content: flex-start;
 
                     input {
-                        width: 60%;
+                        width: 80%;
                     }
 
                     .btn {
@@ -262,7 +261,7 @@
         padding: 5rem 0;
         .secContent {
             .footerCard {
-                flex-direction: row;
+                flex-direction: grid;
 
                 .footerLinks {
                     grid-template-columns: repeat(3,1fr);

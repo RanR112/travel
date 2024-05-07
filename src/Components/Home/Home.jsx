@@ -32,17 +32,17 @@ const Home = ({ setFilter, theme }) => {
             <div className="homeContent container">
                 <div className="textDiv">
                     <span data-aos="fade-up" className="smallText">
-                        Our Services
+                        Selamat Datang
                     </span>
                     
                     <h1 data-aos="fade-up" className="homeTitle">
-                        Search Your Holiday
+                        Cari Wisata Anda
                     </h1>
                 </div>
 
                 <div data-aos="fade-up" className="cardDiv grid">
                     <div className="destinationInput">
-                        <label htmlFor="city">Cari Lokasi Destinasi Anda:</label>
+                        <label htmlFor="city">Cari Lokasi Wisata Anda:</label>
                         <div className="input flex">
                             <input type="text" placeholder='Cth: Bandung' value={search} onChange={(e) => setSearch(e.target.value)}/>
                             <GrLocation className='icon'/>
@@ -79,7 +79,7 @@ const Home = ({ setFilter, theme }) => {
                     <a href="#Main">
                         <div className="searchOptions flex" onClick={handleSearch}>
                                 <FaSearch className='icon'/>
-                                <span>SEARCH</span>
+                                <span>CARI</span>
                         </div>
                     </a>
                 </div>

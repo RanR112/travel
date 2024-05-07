@@ -94,6 +94,11 @@
                     cursor: pointer;
                 }
 
+                option {
+                    background-color: var(--whiteColor);
+                    color: var(--blackColor);
+                }
+
                 .icon {
                     font-size: 18px;
                     color: var(--SecondaryColor) !important;

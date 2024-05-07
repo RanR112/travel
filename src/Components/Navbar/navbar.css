@@ -3,7 +3,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background: var(--whiteColorDeam);
+  background: var(--whiteColor2);
   width: 100%;
   padding: 1rem;
   z-index: 1000;
@@ -17,11 +17,7 @@
   display: flex;
 }
 .header .logo .icon {
-  font-size: 25px;
-  color: var(--PrimaryColor);
-  transform: translateY(5px);
-  width: 2.8rem;
-  height: 2.8rem;
+  width: 4rem;
 }
 .header .logo h1 {
   margin-top: 10px;
@@ -30,7 +26,7 @@
 @media screen and (max-width: 768px) {
   .header .navBar {
     position: absolute;
-    background: var(--whiteColorDeam);
+    background: var(--whiteColor2);
     height: -moz-max-content;
     height: max-content;
     width: 80%;
@@ -42,6 +38,9 @@
     z-index: 2000;
     box-shadow: 0 2px 4px rgba(2, 15, 29, 0.9);
     transition: 0.5s ease-in-out;
+  }
+  .header .navBar .logo .icon {
+    width: 5rem;
   }
   .header .navBar .navLists {
     flex-direction: column;
@@ -151,6 +150,9 @@
   }
   .header {
     padding: 1.5rem 2rem;
+  }
+  .header .logo .icon {
+    width: 4.5rem;
   }
   .header .navBar .navLists {
     display: flex;
