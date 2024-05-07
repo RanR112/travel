@@ -1,6 +1,5 @@
-import React, {useEffect} from 'react'
+import React from 'react'
 import './footer.css'
-import video2 from '../../Assets/Video.mp4'
 import { FiSend } from "react-icons/fi";
 import { FaXTwitter } from "react-icons/fa6";
 import { FaInstagram } from "react-icons/fa";
@@ -9,21 +8,14 @@ import { AiOutlineYoutube } from "react-icons/ai";
 import { FaChevronRight } from "react-icons/fa";
 import logo from "../../Assets/Logo.png"
 
-import Aos from 'aos';
-import 'aos/dist/aos.css'
 
 
-const Footer = () => {
-     // Hook scroll animation
-    useEffect(() => {
-        Aos.init({duration: 2000})
-    }, [])
-
+const Footer = ({theme}) => {
 
     return (
     <section className="footer">
         <div className="layer"></div>
-        <video src={video2} loop autoPlay muted type='video/mp4'></video>
+        <img className="imgbg" src="https://c.pxhere.com/photos/84/22/beach_ocean_sand_water_horizon-99073.jpg!d" alt="pantai"/>
 
         <div className="secContent container">
             <div className="contactDiv flex" id='Contact'>

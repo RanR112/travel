@@ -1,24 +1,8 @@
-:root {
-  --PrimaryColor: hsl(199, 100%, 33%);
-  --SecondaryColor: hsl(187, 85%, 43%);
-  --gradientColor: linear-gradient(to right, hsl(187, 85%, 43%), hsl(199, 100%, 33%));
-  --whiteColor: hsl(0, 0%, 100%);
-  --blackColor: hsl(201, 33%, 16%);
-  --textColor: hsl(240, 4%, 36%);
-  --whiteColorDeam: hsl(0, 0%, 93%);
-  --grayText: rgb(190, 190, 190);
-  --inputColor: rgb(239, 239, 239);
-  --bodyColor: rgb(240, 240, 246);
-  --cradBG: rgb(225, 225, 235);
-  --cradHover: rgb(208, 230, 255);
-}
-
 .main {
   width: 100%;
 }
 .main .secTitle .title {
   position: relative;
-  width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
   color: var(--textColor);
@@ -30,7 +14,7 @@
   content: "";
   background: var(--SecondaryColor);
   height: 5px;
-  width: 120px;
+  width: 184px;
   right: 0;
   bottom: 0;
   z-index: -1;
@@ -178,5 +162,4 @@
   .secContent .noData h3 {
     font-size: 18px !important;
   }
-}
-/*# sourceMappingURL=main.css.map */
+}/*# sourceMappingURL=main.css.map */

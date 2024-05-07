@@ -10,21 +10,51 @@
 
 /* Colors & Styling */
 :root {
-    --PrimaryColor: hsl(199, 100%, 33%);
-    --SecondaryColor: hsl(187, 85%, 43%);
-    --gradientColor : linear-gradient(to right, hsl(187, 85%, 43%), hsl(199, 100%, 33%));
-    --whiteColor: hsl(0, 0%, 100%);
-    --blackColor: hsl(201, 33%, 16%);
-    --textColor: hsl(240, 4%, 36%);
-    --whiteColorDeam: hsl(0, 0%, 93%);
+    --PrimaryColor: rgb(0, 67, 168);
+    --SecondaryColor: rgb(16, 134, 203);
+    --gradientColor : linear-gradient(to right, rgb(16, 134, 203), rgb(0, 67, 168));
+    --bgtransparent : rgba(255, 255, 255, 0.75);
+    --whiteColor: rgb(255, 255, 255);
+    --blackColor: rgb(27, 45, 54);
+    --textColor: rgb(88, 88, 95);
+    --whiteColorDeam: rgb(255, 255, 245);
     --greyText: rgb(190, 190, 190);
     --inputColor: rgb(239, 239, 239);
     --bodyColor: rgb(240, 240, 246);
     --cradBG: rgb(225, 225, 235);
+    --cradHover: rgb(208, 230, 255);
+    --layer: rgb(49, 89, 134);
+    --placeH: rgb(132, 132, 132);
+}
+
+[data-theme='dark'] {
+    --PrimaryColor: rgb(255, 188, 87);
+    --SecondaryColor: rgb(239, 121, 52);
+    --gradientColor: linear-gradient(to right, rgb(255, 188, 87), rgb(239, 121, 52));
+    --bgtransparent : rgba(28, 28, 28, 0.75);
+    --whiteColor: rgb(0, 0, 0);
+    --blackColor: rgb(255, 255, 255);
+    --textColor: rgb(228, 228, 238);
+    --whiteColorDeam: rgb(26, 26, 26);
+    --greyText: rgb(223, 223, 223);
+    --inputColor: rgb(56, 56, 56);
+    --bodyColor: rgb(87, 87, 87);
+    --cradBG: rgb(60, 60, 64);
+    --cradHover: rgb(105, 88, 81);
+    --layer: rgb(106, 60, 28);
+    --placeH: rgb(173, 173, 173);
+}
+
+.App {
+    color: var(--greyText);
+    background-color: var(--whiteColorDeam);
+    font-size: large;
+    font-weight: bold;
 }
 
 html {
     scroll-behavior: smooth;
+    background-color: var(--whiteColorDeam);
 }
 
 a {

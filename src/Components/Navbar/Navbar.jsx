@@ -4,7 +4,7 @@ import { AiFillCloseCircle } from "react-icons/ai"
 import { TbGridDots } from "react-icons/tb"
 import logo from "../../Assets/Logo.png"
 
-const Navbar = () => {
+const Navbar = ({ toggleTheme, theme }) => {
     const [active, setActive] = useState('navBar')
     // Function to toggle navbar
     const showNav = () => {
@@ -16,8 +16,12 @@ const Navbar = () => {
         setActive('navBar')
     }
 
+    const handleThemeToggle = () => {
+        toggleTheme(prevTheme => (prevTheme === 'light' ? 'dark' : 'light'));
+    };
+
     return (
-    <section className='navBarSection'>
+    <section className="navBarSection">
         <header className="header flex">
 
             <div className="logoDiv">
@@ -46,12 +50,12 @@ const Navbar = () => {
                     </li>
 
                     <li className="navItem">
-                        <span className="dark">Dark</span>
+                        <span className="dark">{theme !== 'light' ? 'Dark' : 'Light'}</span>
                     </li>
 
                     <div className="mode">
                         <label className="switch">-
-                            <input type="checkbox" />
+                            <input type="checkbox" onChange={handleThemeToggle} checked={theme !== 'light' ? true : false}/>
                             <span className="slider"></span>
                         </label>
                         

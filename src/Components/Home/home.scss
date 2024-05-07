@@ -1,17 +1,3 @@
-:root {
-    --PrimaryColor: hsl(199, 100%, 33%);
-    --SecondaryColor: hsl(187, 85%, 43%);
-    --gradientColor : linear-gradient(to right, hsl(187, 85%, 43%), hsl(199, 100%, 33%));
-    --whiteColor: hsl(0, 0%, 100%);
-    --blackColor: hsl(201, 33%, 16%);
-    --textColor: hsl(240, 4%, 36%);
-    --whiteColorDeam: hsl(0, 0%, 93%);
-    --greyText: rgb(190, 190, 190);
-    --inputColor: rgb(239, 239, 239);
-    --bodyColor: rgb(240, 240, 246);
-    --cradBG: rgb(225, 225, 235);
-}
-
 .home {
     width: 100%;
     position: relative;
@@ -24,14 +10,14 @@
         position: absolute;
         height: 100%;
         width: 100%;
-        background: rgb(47, 106, 127);
+        background: var(--layer);
         top: 0;
         bottom: 0;
         z-index: 1;
         mix-blend-mode: hard-light;
     }
 
-    video {
+    img {
         position: absolute;
         height: 100%;
         width: 100%;
@@ -50,7 +36,7 @@
         align-items: stretch;
         justify-content: center;
         margin: auto;
-        color: var(--whiteColor);
+        color: white;
         z-index: 100;
 
         .textDiv {
@@ -70,7 +56,7 @@
         .cardDiv {
             position: relative;
             padding: 2rem 1rem;
-            background: rgba(255, 255, 255, 0.75);
+            background: var(--bgtransparent);
             border-radius: 10px;
             gap: 1rem;
 
@@ -95,10 +81,12 @@
                     width: 100%;
                     font-size: 13px;
                     font-weight: 500;
+                    color: var(--blackColor);
                     
 
                     &::placeholder {
                         font-size: 13px;
+                        color: var(--placeH);
                     }
                 }
 
@@ -108,7 +96,7 @@
 
                 .icon {
                     font-size: 18px;
-                    color: var(--PrimaryColor) !important;
+                    color: var(--SecondaryColor) !important;
                     margin-left: 10px;
                 }
             }

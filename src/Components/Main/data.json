@@ -59,6 +59,36 @@
         "fees":"Rp 25.000",
         "loc":"https://maps.app.goo.gl/YMBuTsfhaMTWwWDt9",
         "description":"Kebun Raya Bogor atau Kebun Botani Bogor adalah sebuah kebun botani besar yang terletak di Kota Bogor, Indonesia. Kebun ini dioperasikan oleh Badan Riset dan Inovasi Nasional. Kebun ini terletak di pusat kota Bogor dan bersebelahan dengan kompleks istana kepresidenan Istana Bogor"
+    },
+    {
+        "id":7,
+        "imgSrc":"https://i.imgur.com/51PVv8G.jpeg",
+        "destTitle":"Tangkuban Perahu",
+        "location":"Subang",
+        "tag":"Wisata Alam",
+        "fees":"Rp 30.000",
+        "loc":"https://maps.app.goo.gl/m1xEq58LBLpYJNjS9",
+        "description":"Gunung Tangkuban Parahu adalah salah satu gunung yang terletak di Desa Ciater, Kabupaten Subang, Provinsi Jawa Barat, Indonesia. Sekitar 20 km ke arah utara Kota Bandung, dengan rimbun pohon pinus dan hamparan kebun teh di sekitarnya, Gunung Tangkuban Parahu mempunyai ketinggian setinggi 2.084 meter"
+    },
+    {
+        "id":8,
+        "imgSrc":"https://i.imgur.com/BDhSxRJ.jpeg",
+        "destTitle":"Orchid Forest Cikole",
+        "location":"Bandung",
+        "tag":"Wisata Alam",
+        "fees":"Rp 60.000",
+        "loc":"https://maps.app.goo.gl/fAZyJdj4cSHeJJU69",
+        "description":"Orchid Forest Cikole adalah hutan anggrek terbesar di Indonesia. Enggak main-main, jumlah anggrek di sini mencapai 20.000 tanaman! Selain anggrek, barisan pohon pinus yang ada di sana juga membuat pemandangan Orchid Forest Cikole menjadi sangat indah."
+    },
+    {
+        "id":9,
+        "imgSrc":"https://i.imgur.com/Xpq5i2k.jpeg",
+        "destTitle":"Dusun Bambu Lembang",
+        "location":"Bandung",
+        "tag":"Wisata Alam",
+        "fees":"Rp 20.000",
+        "loc":"https://maps.app.goo.gl/fG9TS1hXk6ncmwgB6",
+        "description":"Dusun Bambu adalah sebuah tempat wisata yang terletak di Lembang, Bandung, Jawa Barat, Indonesia. Tempat ini menawarkan berbagai fasilitas rekreasi dan kuliner yang cocok untuk dikunjungi bersama keluarga atau teman-teman. Dusun Bambu memiliki suasana alam yang sejuk dan hijau, serta berbagai wahana seperti taman bermain, restoran, dan tempat belanja."
     }
 
 ]

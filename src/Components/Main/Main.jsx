@@ -5,15 +5,9 @@ import { HiOutlineLocationMarker } from "react-icons/hi";
 import { LuClipboardCheck } from "react-icons/lu";
 import nodest from '../../Assets/nodata.png'
 
-import Aos from 'aos';
-import 'aos/dist/aos.css'
 
-const Main = ({ filter }) => {
-     // Hook scroll animation
-    useEffect(() => {
-        Aos.init({duration: 2000})
-    }, [])
 
+const Main = ({ filter, theme }) => {
     // State untuk menyimpan destinasi yang telah difilter
     const [filteredDestinations, setFilteredDestinations] = useState([]);
 
@@ -26,13 +20,14 @@ const Main = ({ filter }) => {
                 return true; // Mengembalikan true jika tidak ada filter yang diterapkan
             }
 
+            // Mencocokkan filter
             if (!filter.fees) {
                 return (
                     (filter.location === '' || destination.location.toLowerCase().includes(filter.location.toLowerCase())) &&
                     (filter.tag === '' || destination.tag.toLowerCase() === filter.tag.toLowerCase())
                 );
             }
-            // Memisahkan harga atas dan bawah dari range harga yang dipilih
+            // Memisahkan range harga
             const priceRange = filter.fees.split(' - ');
             const lowerPrice = parseInt(priceRange[0].replace('Rp ', '').replace('.', ''));
             const upperPrice = parseInt(priceRange[1].replace('Rp ', '').replace('.', ''));
@@ -40,6 +35,7 @@ const Main = ({ filter }) => {
             // Mengubah harga destinasi menjadi angka
             const destinationPrice = parseInt(destination.fees.replace('Rp ', '').replace('.', ''));
 
+            // Mengembalikan nilai filter
             return (
                 (filter.location === '' || destination.location.toLowerCase().includes(filter.location.toLowerCase())) &&
                 (filter.tag === '' || destination.tag.toLowerCase() === filter.tag.toLowerCase()) &&
@@ -57,7 +53,7 @@ const Main = ({ filter }) => {
     <section className="main container section" id='Main'>
         <div className="secTitle">
             <h3 data-aos="fade-right" className="title">
-                West Java destinations
+                Destinasi Wisata
             </h3>
         </div>
 

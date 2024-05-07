@@ -1,19 +1,12 @@
-import React, {useEffect, useState} from 'react'
+import React, {useState} from 'react'
 import './home.css'
-import video from '../../Assets/video3.mp4'
 import { GrLocation } from "react-icons/gr"
 import { FaSearch } from "react-icons/fa";
 
-import Aos from 'aos';
-import 'aos/dist/aos.css'
 
 
-const Home = ({ setFilter }) => {
-    // Hook scroll animation
-    useEffect(() => {
-        Aos.init({duration: 2000})
-    }, [])
 
+const Home = ({ setFilter, theme }) => {
     // State untuk menyimpan nilai input dari form
     const [search, setSearch] = useState('');
     const [selectedTag, setSelectedTag] = useState('Semua Kategori');
@@ -34,7 +27,7 @@ const Home = ({ setFilter }) => {
     return (
         <section className="home" id='Home'>
             <div className="layer"></div>
-            <video src={video} muted autoPlay loop type="video/mp4"></video>
+            <img src="https://c.pxhere.com/photos/5a/01/reflection_fuji_japan_mountain_lake_travel_landmark_morning-871522.jpg!d" alt="pemandangan"/>
 
             <div className="homeContent container">
                 <div className="textDiv">
