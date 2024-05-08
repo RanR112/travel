@@ -21,12 +21,12 @@ const Footer = ({theme}) => {
         <div className="secContent container">
             <div className="contactDiv flex" id='Contact'>
                 <div data-aos="fade-up" className="text">
-                    <small>SEMOGA LIBURAN ANDA MENYENANGKAN</small>
+                    <small>SEMOGA WISATA ANDA MENYENANGKAN</small>
                     <h2>Berikan Masukkan Anda</h2>
                 </div>
 
                 <div className="inputDiv flex">
-                    <input data-aos="fade-up" type="text" placeholder='Ketik masukkan Anda...' />
+                    <input data-aos="fade-up" type="text" placeholder='Ketik masukkan...' />
                     <button data-aos="fade-up" className="btn flex" type='submit'>
                         KIRIM <FiSend className='icon'/>
                     </button>

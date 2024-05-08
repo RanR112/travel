@@ -55,7 +55,9 @@ const Home = ({ setFilter, theme }) => {
                                 <option selected>Semua Kategori</option>
                                 <option value="Wisata Alam">Wisata Alam</option>
                                 <option value="Kebun Binatang">Kebun Binatang</option>
-                                <option value="Kebun Botani">Kebun Botani</option>
+                                <option value="Rekreasi">Rekreasi</option>
+                                <option value="Pantai">Pantai</option>
+                                <option value="Museum">Museum</option>
                             </select>
                         </div>
                     </div>
