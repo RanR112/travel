@@ -11,7 +11,7 @@ import logow from "../../Assets/logowhite.png"
 
 
 
-const Footer = ({theme}) => {
+const Footer = ({theme, onCityClick}) => {
 
     return (
     <section className="footer">
@@ -97,33 +97,39 @@ const Footer = ({theme}) => {
                         </span>
 
                         <li className="footerList flex">
-                            <FaChevronRight className='icon'/>
+                            <a href="https://www.indonesia.travel/gb/en/home.html"><FaChevronRight className='icon'/>
                             Pesona Indonesia
+                            </a>
                         </li>
                         
                         <li className="footerList flex">
-                            <FaChevronRight className='icon'/>
-                            KAI Access
-                        </li>
-
-                        <li className="footerList flex">
-                            <FaChevronRight className='icon'/>
-                            Sinar Jaya
-                        </li>
-
-                        <li className="footerList flex">
-                            <FaChevronRight className='icon'/>
-                            Reddoorz
-                        </li>
-
-                        <li className="footerList flex">
-                            <FaChevronRight className='icon'/>
+                            <a href="https://www.traveloka.com/id-id"><FaChevronRight className='icon'/>
                             Traveloka
+                            </a>
                         </li>
 
                         <li className="footerList flex">
-                            <FaChevronRight className='icon'/>
+                            <a href="https://www.reddoorz.com/id-id/"><FaChevronRight className='icon'/>
+                            Reddoorz
+                            </a>
+                        </li>
+
+                        <li className="footerList flex">
+                            <a href="https://www.agoda.com/"><FaChevronRight className='icon'/>
                             Agoda
+                            </a>
+                        </li>
+
+                        <li className="footerList flex">
+                            <a href="https://www.kai.id/"><FaChevronRight className='icon'/>
+                            KAI
+                            </a>
+                        </li>
+
+                        <li className="footerList flex">
+                            <a href="https://www.sinarjayagroup.co.id/"><FaChevronRight className='icon'/>
+                            Sinar Jaya
+                            </a>
                         </li>
 
                     </div>
@@ -133,34 +139,40 @@ const Footer = ({theme}) => {
                             FAVORIT
                         </span>
 
-                        <li className="footerList flex">
-                            <FaChevronRight className='icon'/>
+                        <li className="footerList flex" onClick={() => onCityClick('Bandung')}>
+                            <a href="#Main"><FaChevronRight className='icon' />
                             Bandung
+                            </a>
                         </li>
-                        
-                        <li className="footerList flex">
-                            <FaChevronRight className='icon'/>
+
+                        <li className="footerList flex" onClick={() => onCityClick('Bogor')}>
+                            <a href="#Main"><FaChevronRight className='icon' />
                             Bogor
+                            </a>
                         </li>
 
-                        <li className="footerList flex">
-                            <FaChevronRight className='icon'/>
+                        <li className="footerList flex" onClick={() => onCityClick('Cianjur')}>
+                            <a href="#Main"><FaChevronRight className='icon' />
                             Cianjur
+                            </a>
                         </li>
 
-                        <li className="footerList flex">
-                            <FaChevronRight className='icon'/>
-                            Cirebon
+                        <li className="footerList flex" onClick={() => onCityClick('Subang')}>
+                            <a href="#Main"><FaChevronRight className='icon' />
+                            Subang
+                            </a>
                         </li>
 
-                        <li className="footerList flex">
-                            <FaChevronRight className='icon'/>
-                            Tasikmalaya
+                        <li className="footerList flex" onClick={() => onCityClick('Sumedang')}>
+                            <a href="#Main"><FaChevronRight className='icon' />
+                            Sumedang
+                            </a>
                         </li>
 
-                        <li className="footerList flex">
-                            <FaChevronRight className='icon'/>
-                            Sukabumi
+                        <li className="footerList flex" onClick={() => onCityClick('Pangandaran')}>
+                            <a href="#Main"><FaChevronRight className='icon' />
+                            Pangandaran
+                            </a>
                         </li>
 
                     </div>

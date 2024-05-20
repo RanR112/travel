@@ -159,6 +159,9 @@
   color: var(--textColor);
   transition: 0.3s ease-in-out;
 }
+.footer .secContent .footerCard .footerLinks .linkGroup .footerList a {
+  color: var(--textColor);
+}
 .footer .secContent .footerCard .footerLinks .linkGroup .footerList .icon {
   font-size: 15px;
   color: var(--textColor);
@@ -166,6 +169,9 @@
 .footer .secContent .footerCard .footerLinks .linkGroup .footerList:hover {
   color: var(--PrimaryColor);
   transform: translateX(7px);
+}
+.footer .secContent .footerCard .footerLinks .linkGroup .footerList:hover a {
+  color: var(--PrimaryColor);
 }
 .footer .secContent .footerCard .footerLinks .linkGroup .footerList:hover .icon {
   color: var(--SecondaryColor);

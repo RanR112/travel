@@ -40,7 +40,7 @@ const Home = ({ setFilter, theme }) => {
                     </h1>
                 </div>
 
-                <div data-aos="fade-up" className="cardDiv grid">
+                <form data-aos="fade-up" className="cardDiv grid">
                     <div className="destinationInput">
                         <label htmlFor="city">Cari Lokasi Wisata Anda:</label>
                         <div className="input flex">
@@ -55,7 +55,7 @@ const Home = ({ setFilter, theme }) => {
                                 <option selected>Semua Kategori</option>
                                 <option value="Wisata Alam">Wisata Alam</option>
                                 <option value="Kebun Binatang">Kebun Binatang</option>
-                                <option value="Rekreasi">Rekreasi</option>
+                                <option value="Rekreasi">Objek Wisata</option>
                                 <option value="Pantai">Pantai</option>
                                 <option value="Museum">Museum</option>
                             </select>
@@ -84,7 +84,7 @@ const Home = ({ setFilter, theme }) => {
                                 <span>CARI</span>
                         </div>
                     </a>
-                </div>
+                </form>
             </div>
 
         </section>

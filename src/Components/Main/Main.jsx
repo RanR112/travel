@@ -7,13 +7,19 @@ import nodest from '../../Assets/nodata.png'
 
 
 
-const Main = ({ filter, theme }) => {
+const Main = ({ filter, theme, select }) => {
     // State untuk menyimpan destinasi yang telah difilter
     const [filteredDestinations, setFilteredDestinations] = useState([]);
+    
 
     // Fungsi untuk menyaring destinasi berdasarkan filter
     const applyFilter = () => {
         const filteredData = Data.filter(destination => {
+
+            // Jika destinasi pada footer diklik, filter berdasarkan destinasi
+            if (select) {
+                return destination.location.toLowerCase().includes(select.toLowerCase());
+            }
 
             // Memeriksa apakah filter kosong
             if (Object.values(filter).every(value => value === '')) {
@@ -47,7 +53,9 @@ const Main = ({ filter, theme }) => {
 
     useEffect(() => {
         applyFilter();
-    });
+    }, [filter, select]);
+
+    
 
     return (
     <section className="main container section" id='Main'>

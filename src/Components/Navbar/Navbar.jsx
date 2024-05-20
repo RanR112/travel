@@ -7,16 +7,17 @@ import logow from "../../Assets/logowhitetext.png"
 
 const Navbar = ({ toggleTheme, theme }) => {
     const [active, setActive] = useState('navBar')
-    // Function to toggle navbar
+    // Fungsi untuk mengaktifkan navbar
     const showNav = () => {
         setActive('navBar activeNavbar')
     }
 
-    // Function to remove navbar
+    // Fungsi untuk menutup navbar
     const removeNavbar = () => {
         setActive('navBar')
     }
 
+    // Fungsi untuk mengubah tema
     const handleThemeToggle = () => {
         toggleTheme(prevTheme => (prevTheme === 'light' ? 'dark' : 'light'));
     };
