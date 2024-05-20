@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from 'react'
+import React, {useEffect, useState, useCallback} from 'react'
 import './main.css'
 import Data from './data.json'
 import { HiOutlineLocationMarker } from "react-icons/hi";
@@ -13,7 +13,7 @@ const Main = ({ filter, theme, select }) => {
     
 
     // Fungsi untuk menyaring destinasi berdasarkan filter
-    const applyFilter = () => {
+    const applyFilter = useCallback(() => {
         const filteredData = Data.filter(destination => {
 
             // Jika destinasi pada footer diklik, filter berdasarkan destinasi
@@ -49,11 +49,11 @@ const Main = ({ filter, theme, select }) => {
             );
         });
         setFilteredDestinations(filteredData);
-    };
+    }, [filter, select]);
 
     useEffect(() => {
         applyFilter();
-    }, [filter, select]);
+    }, [applyFilter]);
 
     
 
