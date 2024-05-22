@@ -14,7 +14,7 @@ import logow from "../../Assets/logowhite.png"
 const Footer = ({theme, onCityClick}) => {
 
     return (
-    <section className="footer">
+    <section className="footer" id="Footer">
         <div className="layer"></div>
         <img className="imgbg" src="https://c.pxhere.com/photos/84/22/beach_ocean_sand_water_horizon-99073.jpg!d" alt="pantai"/>
 
@@ -44,7 +44,7 @@ const Footer = ({theme, onCityClick}) => {
                     West Java Tour adalah sebuah platform daring yang didedikasikan untuk menyediakan informasi lengkap tentang destinasi wisata di provinsi Jawa Barat, Indonesia. Didirikan dengan tujuan untuk membantu wisatawan lokal dan internasional dalam menemukan keindahan dan kekayaan budaya yang ada di Jawa Barat. West Java Tour telah menjadi salah satu sumber terpercaya untuk perencanaan perjalanan dan rekomendasi tempat wisata.
                     </div>
 
-                    <div data-aos="fade-up" className="footerSocials">
+                    <div data-aos="fade-up" className="footerSocials" id="Contact">
                         <FaInstagram className='icon'/>
                         <FaFacebookSquare className='icon'/>
                         <FaXTwitter className='icon'/>

@@ -44,11 +44,11 @@ const Navbar = ({ toggleTheme, theme }) => {
                     </li>
 
                     <li className="navItem">
-                        <a href="#Contact" className="navLink">About</a>
+                        <a href="#Footer" className="navLink">About</a>
                     </li>
 
                     <li className="navItem">
-                        <a href="#About" className="navLink">Contact</a>
+                        <a href="#Contact" className="navLink">Contact</a>
                     </li>
 
                     <li className="navItem">
