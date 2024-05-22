@@ -18,8 +18,6 @@ const App = () => {
     const defaultDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
     // State untuk menetapkan tema
     const [theme, setTheme] = useLocalStorage('theme', defaultDark ? 'dark' : 'light');
-    // State untuk menetapkan destinasi yang dipilih
-    const [selectedCity, setSelectedCity] = useState('');
     
     // Fungsi untuk menentukan tema
     const toggleTheme = newTheme => {
@@ -33,17 +31,14 @@ const App = () => {
         fees: ''
     });
 
-    // Fungsi untuk memilih destinasi ketika destinasi pada footer diklik
-    const handleCityClick = (city) => {
-        setSelectedCity(city);
-    };
+    
 
     return (
         <div className="App" data-theme={theme}>
             <Navbar toggleTheme={toggleTheme} theme={theme} />
-            <Home setFilter={setFilter} theme={theme}/>
-            <Main filter={filter} theme={theme} select={selectedCity}/>
-            <Footer theme={theme} onCityClick={handleCityClick}/>
+            <Home filter={filter} setFilter={setFilter} />
+            <Main filter={filter} />
+            <Footer theme={theme} setFilter={setFilter}/>
         </div>
     )
 }

@@ -11,7 +11,14 @@ import logow from "../../Assets/logowhite.png"
 
 
 
-const Footer = ({theme, onCityClick}) => {
+const Footer = ({ theme, setFilter }) => {
+    // Fungsi untuk memilih destinasi ketika destinasi pada footer diklik
+    const setFavoriteDestination = (destination) => {
+        setFilter(filter => ({
+            ...filter,
+            location: destination
+        }));
+    };
 
     return (
     <section className="footer" id="Footer">
@@ -139,37 +146,37 @@ const Footer = ({theme, onCityClick}) => {
                             FAVORIT
                         </span>
 
-                        <li className="footerList flex" onClick={() => onCityClick('Bandung')}>
+                        <li className="footerList flex" onClick={() => setFavoriteDestination('Bandung')}>
                             <a href="#Main"><FaChevronRight className='icon' />
                             Bandung
                             </a>
                         </li>
 
-                        <li className="footerList flex" onClick={() => onCityClick('Bogor')}>
+                        <li className="footerList flex" onClick={() => setFavoriteDestination('Bogor')}>
                             <a href="#Main"><FaChevronRight className='icon' />
                             Bogor
                             </a>
                         </li>
 
-                        <li className="footerList flex" onClick={() => onCityClick('Cianjur')}>
+                        <li className="footerList flex" onClick={() => setFavoriteDestination('Cianjur')}>
                             <a href="#Main"><FaChevronRight className='icon' />
                             Cianjur
                             </a>
                         </li>
 
-                        <li className="footerList flex" onClick={() => onCityClick('Subang')}>
+                        <li className="footerList flex" onClick={() => setFavoriteDestination('Subang')}>
                             <a href="#Main"><FaChevronRight className='icon' />
                             Subang
                             </a>
                         </li>
 
-                        <li className="footerList flex" onClick={() => onCityClick('Sumedang')}>
+                        <li className="footerList flex" onClick={() => setFavoriteDestination('Sumedang')}>
                             <a href="#Main"><FaChevronRight className='icon' />
                             Sumedang
                             </a>
                         </li>
 
-                        <li className="footerList flex" onClick={() => onCityClick('Pangandaran')}>
+                        <li className="footerList flex" onClick={() => setFavoriteDestination('Pangandaran')}>
                             <a href="#Main"><FaChevronRight className='icon' />
                             Pangandaran
                             </a>

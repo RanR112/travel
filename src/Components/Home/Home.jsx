@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React, {useState, useEffect} from 'react'
 import './home.css'
 import { GrLocation } from "react-icons/gr"
 import { FaSearch } from "react-icons/fa";
@@ -6,11 +6,17 @@ import { FaSearch } from "react-icons/fa";
 
 
 
-const Home = ({ setFilter, theme }) => {
+const Home = ({ filter, setFilter }) => {
     // State untuk menyimpan nilai input dari form
     const [search, setSearch] = useState('');
     const [selectedTag, setSelectedTag] = useState('Semua Kategori');
     const [selectedPrice, setSelectedPrice] = useState('Semua Harga');
+
+    useEffect(() => {
+        setSearch(filter.location);
+        setSelectedTag(filter.tag !== '' ? filter.tag : 'Semua Kategori');
+        setSelectedPrice(filter.fees !== '' ? filter.fees : 'Semua Harga');
+    }, [filter]);
 
     // Fungsi untuk menangani perubahan input dari form dan mengirimkan nilai filter ke komponen Main
     const handleSearch = () => {
@@ -55,7 +61,7 @@ const Home = ({ setFilter, theme }) => {
                                 <option selected>Semua Kategori</option>
                                 <option value="Wisata Alam">Wisata Alam</option>
                                 <option value="Kebun Binatang">Kebun Binatang</option>
-                                <option value="Rekreasi">Objek Wisata</option>
+                                <option value="Objek Wisata">Objek Wisata</option>
                                 <option value="Pantai">Pantai</option>
                                 <option value="Museum">Museum</option>
                             </select>
