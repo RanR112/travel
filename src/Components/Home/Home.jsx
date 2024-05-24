@@ -29,7 +29,6 @@ const Home = ({ filter, setFilter }) => {
     };
 
 
-
     return (
         <section className="home" id='Home'>
             <div className="layer"></div>
