@@ -172,7 +172,7 @@
     font-weight: 600;
   }
   .header .navBar .navLists .navItem .navLink:hover {
-    color: var(--PrimaryColor);
+    color: var(--cradHover);
   }
   .header .navBar .navLists .mode .switch {
     position: relative;
