@@ -173,6 +173,8 @@
   }
   .header .navBar .navLists .navItem .navLink:hover {
     color: var(--cradHover);
+    border-bottom: 3px solid var(--cradHover);
+    transition: 0.2s ease;
   }
   .header .navBar .navLists .mode .switch {
     position: relative;
@@ -418,6 +420,8 @@
   }
   .header-scroll .navBar .navLists .navItem .navLink:hover {
     color: var(--PrimaryColor);
+    border-bottom: 3px solid var(--PrimaryColor);
+    transition: 0.2s ease;
   }
   .header-scroll .navBar .navLists .mode .switch {
     position: relative;

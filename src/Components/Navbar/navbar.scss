@@ -210,6 +210,8 @@
 
                         &:hover {
                             color: var(--cradHover);
+                            border-bottom: 3px solid var(--cradHover);
+                            transition: .2s ease;
                         }
                     }
                 }
@@ -519,6 +521,8 @@
 
                         &:hover {
                             color: var(--PrimaryColor);
+                            border-bottom: 3px solid var(--PrimaryColor);
+                            transition: .2s ease;
                         }
                     }
                 }
