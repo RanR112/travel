@@ -7,6 +7,7 @@ import logow from "../../Assets/logowhitetext.png"
 
 const Navbar = ({ toggleTheme, theme }) => {
     const [active, setActive] = useState('navBar')
+    const [scroll, setScroll] = useState(false)
     // Fungsi untuk mengaktifkan navbar
     const showNav = () => {
         setActive('navBar activeNavbar')
@@ -22,9 +23,19 @@ const Navbar = ({ toggleTheme, theme }) => {
         toggleTheme(prevTheme => (prevTheme === 'light' ? 'dark' : 'light'));
     };
 
+    const changeColor = () => {
+        if (window.scrollY >= 90) {
+            setScroll(true)
+        } else {
+            setScroll(false)
+        }
+    }
+
+    window.addEventListener('scroll', changeColor)
+
     return (
     <section className="navBarSection">
-        <header className="header flex">
+        <header className={scroll ? "header-scroll flex" : "header flex"}>
 
             <div className="logoDiv">
                 <span className="logo flex">
