@@ -23,6 +23,7 @@ const Navbar = ({ toggleTheme, theme }) => {
         toggleTheme(prevTheme => (prevTheme === 'light' ? 'dark' : 'light'));
     };
 
+    // Fungsi untuk mengubah navbar
     const changeColor = () => {
         if (window.scrollY >= 90) {
             setScroll(true)
@@ -67,7 +68,7 @@ const Navbar = ({ toggleTheme, theme }) => {
                     </li>
 
                     <div className="mode">
-                        <label className="switch">-
+                        <label className="switch">
                             <input type="checkbox" onChange={handleThemeToggle} checked={theme !== 'light' ? true : false}/>
                             <span className="slider"></span>
                         </label>

@@ -72,6 +72,9 @@
     width: 60px;
     height: 34px;
   }
+  .header .navBar .navLists .mode .switch input {
+    display: none;
+  }
   .header .navBar .navLists .mode .slider {
     position: absolute;
     cursor: pointer;
@@ -138,7 +141,7 @@
 }
 .header .toggleNavbar .icon {
   font-size: 25px;
-  color: var(--blackColor);
+  color: var(--nav);
 }
 .header .toggleNavbar:hover.icon {
   color: var(--SecondaryColor);
@@ -161,26 +164,48 @@
     flex-direction: row;
   }
   .header .navBar .navLists .dark {
-    color: var(--blackColor);
+    color: var(--nav);
+    padding: 0 0.3rem 0 0.45rem;
     font-size: 1rem;
     font-weight: 600;
   }
   .header .navBar .navLists .navItem .navLink {
-    color: var(--blackColor);
+    color: var(--nav);
     padding: 0 0.45rem;
     font-size: 1rem;
     font-weight: 600;
+    display: inline-block;
+    position: relative;
+  }
+  .header .navBar .navLists .navItem .navLink::after {
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background: var(--cradHover);
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
   }
   .header .navBar .navLists .navItem .navLink:hover {
     color: var(--cradHover);
-    border-bottom: 3px solid var(--cradHover);
-    transition: 0.2s ease;
+    transition: 0.3s;
+  }
+  .header .navBar .navLists .navItem .navLink:hover::after {
+    width: 100%;
+    left: 0;
   }
   .header .navBar .navLists .mode .switch {
     position: relative;
     display: inline-block;
     width: 60px;
     height: 34px;
+    margin-top: 0.7rem;
+  }
+  .header .navBar .navLists .mode .switch input {
+    display: none;
   }
   .header .navBar .navLists .mode .slider {
     position: absolute;
@@ -319,6 +344,9 @@
     width: 60px;
     height: 34px;
   }
+  .header-scroll .navBar .navLists .mode .switch input {
+    display: none;
+  }
   .header-scroll .navBar .navLists .mode .slider {
     position: absolute;
     cursor: pointer;
@@ -409,6 +437,7 @@
   }
   .header-scroll .navBar .navLists .dark {
     color: var(--textColor);
+    padding: 0 0.3rem 0 0.45rem;
     font-size: 1rem;
     font-weight: 600;
   }
@@ -417,17 +446,42 @@
     padding: 0 0.45rem;
     font-size: 1rem;
     font-weight: 600;
+    display: inline-block;
+    position: relative;
+  }
+  .header-scroll .navBar .navLists .navItem .navLink::after {
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background: var(--PrimaryColor);
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
   }
   .header-scroll .navBar .navLists .navItem .navLink:hover {
     color: var(--PrimaryColor);
-    border-bottom: 3px solid var(--PrimaryColor);
-    transition: 0.2s ease;
+    transition: 0.3s;
+  }
+  .header-scroll .navBar .navLists .navItem .navLink:hover::after {
+    width: 100%;
+    left: 0;
+  }
+  .header-scroll .navBar .navLists .navItem .navLink:active {
+    border-bottom: 2px solid var(--PrimaryColor);
+    color: var(--PrimaryColor);
   }
   .header-scroll .navBar .navLists .mode .switch {
     position: relative;
     display: inline-block;
     width: 60px;
     height: 34px;
+    margin-top: 0.7rem;
+  }
+  .header-scroll .navBar .navLists .mode .switch input {
+    display: none;
   }
   .header-scroll .navBar .navLists .mode .slider {
     position: absolute;

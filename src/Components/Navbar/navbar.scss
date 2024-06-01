@@ -82,6 +82,10 @@
                         display: inline-block;
                         width: 60px;
                         height: 34px;
+
+                        input {
+                            display: none;
+                        }
                     }
                 
                     .slider {
@@ -164,7 +168,7 @@
     .toggleNavbar {
         .icon {
             font-size: 25px;
-            color: var(--blackColor);
+            color: var(--nav);
         }
         &:hover.icon{
             color: var(--SecondaryColor);
@@ -196,22 +200,42 @@
                 flex-direction: row;
 
                 .dark {
-                    color: var(--blackColor);
+                    color: var(--nav);
+                    padding: 0 0.3rem 0 0.45rem;
                     font-size: 1rem;
                     font-weight: 600;
                 }
 
                 .navItem {
                     .navLink {
-                        color: var(--blackColor);
+                        color: var(--nav);
                         padding: 0 0.45rem;
                         font-size: 1rem;
                         font-weight: 600;
+                        display: inline-block;
+                        position: relative;
 
-                        &:hover {
+                        &::after {
+                            background: none repeat scroll 0 0 transparent;
+                            bottom: 0;
+                            content: "";
+                            display: block;
+                            height: 2px;
+                            left: 50%;
+                            position: absolute;
+                            background: var(--cradHover);
+                            transition: width 0.3s ease 0s, left 0.3s ease 0s;
+                            width: 0;
+                        }
+
+                        &:hover{
                             color: var(--cradHover);
-                            border-bottom: 3px solid var(--cradHover);
-                            transition: .2s ease;
+                            transition: .3s;
+                        }
+
+                        &:hover::after {
+                            width: 100%; 
+                            left: 0; 
                         }
                     }
                 }
@@ -222,6 +246,11 @@
                         display: inline-block;
                         width: 60px;
                         height: 34px;
+                        margin-top: .7rem;
+
+                        input {
+                            display: none;
+                        }
                     }
                 
                     .slider {
@@ -393,6 +422,10 @@
                         display: inline-block;
                         width: 60px;
                         height: 34px;
+
+                        input {
+                            display: none;
+                        }
                     }
                 
                     .slider {
@@ -508,6 +541,7 @@
 
                 .dark {
                     color: var(--textColor);
+                    padding: 0 0.3rem 0 0.45rem;
                     font-size: 1rem;
                     font-weight: 600;
                 }
@@ -518,11 +552,35 @@
                         padding: 0 0.45rem;
                         font-size: 1rem;
                         font-weight: 600;
+                        display: inline-block;
+                        position: relative;
 
-                        &:hover {
+                        &::after {
+                            background: none repeat scroll 0 0 transparent;
+                            bottom: 0;
+                            content: "";
+                            display: block;
+                            height: 2px;
+                            left: 50%;
+                            position: absolute;
+                            background: var(--PrimaryColor);
+                            transition: width 0.3s ease 0s, left 0.3s ease 0s;
+                            width: 0;
+                        }
+
+                        &:hover{
                             color: var(--PrimaryColor);
-                            border-bottom: 3px solid var(--PrimaryColor);
-                            transition: .2s ease;
+                            transition: .3s;
+                        }
+
+                        &:hover::after {
+                            width: 100%; 
+                            left: 0;
+                        }
+
+                        &:active {
+                            border-bottom: 2px solid var(--PrimaryColor);
+                            color: var(--PrimaryColor);
                         }
                     }
                 }
@@ -533,6 +591,11 @@
                         display: inline-block;
                         width: 60px;
                         height: 34px;
+                        margin-top: .7rem;
+
+                        input {
+                            display: none;
+                        }
                     }
                 
                     .slider {

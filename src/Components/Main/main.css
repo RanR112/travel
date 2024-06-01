@@ -131,7 +131,7 @@
     font-size: 1.5rem;
   }
   .title::after {
-    width: 155px !important;
+    width: 209px !important;
   }
   .secContent {
     grid-template-columns: repeat(2, 1fr);
