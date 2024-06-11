@@ -66,7 +66,7 @@ const Main = ({ filter }) => {
             {filteredDestinations.length > 0 ? (
                 filteredDestinations.map(({ id, imgSrc, destTitle, location, tag, fees, loc, description }) => {
                     return(
-                        <div key={id} data-aos="fade-up" className="singleDestination">
+                        <div key={id} data-aos="fade-up" data-aos-delay='100' className="singleDestination">
                             <div className="imageDiv">
                                 <img src={imgSrc} alt={destTitle} />
                             </div>
