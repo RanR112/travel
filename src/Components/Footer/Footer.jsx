@@ -1,4 +1,5 @@
-import React from 'react'
+import React, {useRef, useEffect} from 'react'
+import Swal from 'sweetalert2';
 import './footer.css'
 import { FiSend } from "react-icons/fi";
 import { FaXTwitter } from "react-icons/fa6";
@@ -20,6 +21,48 @@ const Footer = ({ theme, setFilter }) => {
         }));
     };
 
+    const formRef = useRef(null);
+
+    useEffect(() => {
+        const form = formRef.current;
+        
+        const handleSubmit = (e) => {
+            e.preventDefault();
+            const data = new FormData(form);
+            const action = e.target.action;
+            fetch(action, {
+                method: 'POST',
+                body: data,
+            })
+            .then(() => {
+                if (theme === 'light') {
+                    Swal.fire({
+                        title: "Terkirim",
+                        text: "Terimakasih atas masukan Anda",
+                        icon: "success",
+                        confirmButtonColor: '#1086cb'
+                    });
+                } else {
+                    Swal.fire({
+                        title: "Terkirim",
+                        text: "Terimakasih atas masukan Anda",
+                        icon: "success",
+                        background: "#1c1c1c",
+                        color:'white',
+                        confirmButtonColor: '#ef7934'
+                    });
+                }
+                form.reset();
+            });
+        };
+
+    form.addEventListener("submit", handleSubmit);
+
+    return () => {
+        form.removeEventListener("submit", handleSubmit);
+        };
+    }, [theme]);
+
     return (
     <section className="footer" id="Footer">
         <div className="layer"></div>
@@ -32,12 +75,12 @@ const Footer = ({ theme, setFilter }) => {
                     <h2>Berikan Masukkan Anda</h2>
                 </div>
 
-                <div className="inputDiv flex">
-                    <input data-aos="fade-up" type="text" placeholder='Ketik masukkan...' />
+                <form className="inputDiv flex" id='my-form' method='POST' ref={formRef} action='https://script.google.com/macros/s/AKfycbxgwFZQABCuFR22V-xZx4SubUF9m3-LSGB0V0eGJkQ9CKXlptzNfdrCkl86jAshH6us/exec'>
+                    <input data-aos="fade-up" name='Masukan' type="text" placeholder='Ketik masukan...' />
                     <button data-aos="fade-up" className="btn flex" type='submit'>
                         KIRIM <FiSend className='icon'/>
                     </button>
-                </div>
+                </form>
             </div>
 
             <div className="footerCard flex">

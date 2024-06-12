@@ -9,7 +9,7 @@ import nodest from '../../Assets/nodata.png'
 
 const Main = ({ filter }) => {
     // State untuk menyimpan destinasi yang telah difilter
-    const [filteredDestinations, setFilteredDestinations] = useState([]);
+    const [filtered, setFiltered] = useState([]);
     
 
     // Fungsi untuk menyaring destinasi berdasarkan filter
@@ -44,7 +44,7 @@ const Main = ({ filter }) => {
                 (filter.fees === '' || (destinationPrice >= lowerPrice && destinationPrice <= upperPrice))
             );
         });
-        setFilteredDestinations(filteredData);
+        setFiltered(filteredData);
     }, [filter]);
 
     useEffect(() => {
@@ -63,8 +63,8 @@ const Main = ({ filter }) => {
 
         <div className="secContent grid">
 
-            {filteredDestinations.length > 0 ? (
-                filteredDestinations.map(({ id, imgSrc, destTitle, location, tag, fees, loc, description }) => {
+            {filtered.length > 0 ? (
+                filtered.map(({ id, imgSrc, destTitle, location, tag, fees, loc, description }) => {
                     return(
                         <div key={id} data-aos="fade-up" data-aos-delay='100' className="singleDestination">
                             <div className="imageDiv">
